@@ -21,7 +21,6 @@
 
     <!-- Eingebundene Bibliotheken -->
     <script type="text/javascript" src="https://www.fussball.de/static/layout/fbde2/egm//js/widget2.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
@@ -89,7 +88,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Startseite <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -107,10 +106,18 @@
                         Jugend
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Vorstand</a>
-                        <a class="dropdown-item" href="#">Förderverein</a>
-                        <a class="dropdown-item" href="#">Schiedsrichter</a>
-                        <a class="dropdown-item" href="#">Ehrenmitglieder</a>
+                        <a class="dropdown-item" href="#">Jugendvorstand</a>
+                        <a class="dropdown-item" href="#">Jugendleiter</a>
+                        <hr>
+                        <a class="dropdown-item" href="#">A-Jugend</a>
+                        <a class="dropdown-item" href="#">C-Jugend</a>
+                        <a class="dropdown-item" href="#">D1-Jugend</a>
+                        <a class="dropdown-item" href="#">D2-Jugend</a>
+                        <a class="dropdown-item" href="#">E1-Jugend</a>
+                        <a class="dropdown-item" href="#">E2-und E3-Jugend</a>
+                        <a class="dropdown-item" href="#">F1-Jugend</a>
+                        <a class="dropdown-item" href="#">F2-Jugend</a>
+                        <a class="dropdown-item" href="#">F3-Jugend</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -118,14 +125,16 @@
                         Senioren
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Vorstand</a>
-                        <a class="dropdown-item" href="#">Förderverein</a>
-                        <a class="dropdown-item" href="#">Schiedsrichter</a>
-                        <a class="dropdown-item" href="#">Ehrenmitglieder</a>
+                        <a class="dropdown-item" href="#">1. Mannschaft</a>
+                        <a class="dropdown-item" href="#">2. Mannschaft</a>
+                        <a class="dropdown-item" href="#">Alte Herren</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="fotos">Fotos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsoren">Sponsoren</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="kontakt">Kontakt</a>
