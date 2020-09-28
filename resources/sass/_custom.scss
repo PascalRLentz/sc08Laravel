@@ -17,17 +17,17 @@ html, body {
 .gallery-block{
     padding-bottom: 60px;
     padding-top: 60px;
-}
 
-.gallery-block .heading{
-    margin-bottom: 50px;
-    text-align: center;
-}
+    .heading {
+        margin-bottom: 50px;
+        text-align: center;
 
-.gallery-block .heading h2{
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-transform: uppercase;
+        h2 {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .gallery-block.compact-gallery .item{
@@ -161,29 +161,58 @@ section {
 }
 
 .news {
-    background-color: darkgray;
+    background-color: white;
     border-radius: 5px;
 
     .news-header {
         background-color: #008305;
         padding: 18px 18px;
+        border-radius: 5px 5px 0px 0px;
         h3 {
             color: white;
-            font-weight: bolder;
         }
     }
     .news-content {
+        padding: 20px 20px 20px 20px;
         p {
             font-size: 1rem;
         }
+
+        .carousel-inner img {
+            width: auto;
+        }
     }
+
     .news-footer {
         padding: 10px 10px 1px 10px;
         background-color: #008305;
+        border-radius: 0px 0px 5px 5px;
         p {
             color: white;
         }
     }
+}
+
+#myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
 }
 
 .btn-primary {
@@ -194,6 +223,11 @@ section {
 .btn-primary:hover {
     background-color: #116314;
     border: 1px solid #015701;
+}
+
+.btn-primary:active {
+    background-color: #116314 !important;
+    border-color: #116314;
 }
 
 .jumbotron {

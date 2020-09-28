@@ -49,8 +49,8 @@
                         <h1 class="display-2 d-none d-lg-block">SC08 Elsdorf</h1>
                         <h1 class="display-2 d-none d-lg-block">Jetzt Anmelden!</h1>
                         <div class="d-none d-lg-block">
-                            <button type="button" class="btn btn-outline-light btn-lg uppercase">Anmeldung</button>
-                            <button type="button" class="btn btn-primary btn-lg">Mehr Informationen</button>
+                            <a href="anmeldung#content" class="btn btn-outline-light btn-lg uppercase">Anmeldung</a>
+                            <a type="#" class="btn btn-primary btn-lg">Mehr Informationen</a>
                         </div>
                     </div>
                 </div>
@@ -69,8 +69,8 @@
                         <h1 class="display-2">SC08 Elsdorf</h1>
                         <h3>Jetzt Anmelden!</h3>
                         <div class="d-none d-sm-block">
-                            <button type="button" class="btn btn-outline-light btn-lg">Anmeldung</button>
-                            <button type="button" class="btn btn-primary btn-lg">Mehr Informationen</button>
+                            <a href="anmeldung#content" class="btn btn-outline-light btn-lg uppercase">Anmeldung</a>
+                            <a type="#" class="btn btn-primary btn-lg">Mehr Informationen</a>
                         </div>
                     </div>
                 </div>
@@ -88,15 +88,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Startseite <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/#content">Startseite <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Verein
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="vorstand">Vorstand</a>
-                        <a class="dropdown-item" href="foerderverein">Förderverein</a>
+                        <a class="dropdown-item" href="vorstand#content">Vorstand</a>
+                        <a class="dropdown-item" href="foerderverein#content">Förderverein</a>
                         <a class="dropdown-item" href="#">Schiedsrichter</a>
                         <a class="dropdown-item" href="#">Ehrenmitglieder</a>
                     </div>
@@ -106,12 +106,12 @@
                         Jugend
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Jugendvorstand</a>
-                        <a class="dropdown-item" href="#">Jugendleiter</a>
+                        <a class="dropdown-item" href="jugendvorstand#content">Jugendvorstand</a>
+                        <a class="dropdown-item" href="jugendleiter#content">Jugendleiter</a>
                         <hr>
-                        <a class="dropdown-item" href="#">A-Jugend</a>
-                        <a class="dropdown-item" href="#">C-Jugend</a>
-                        <a class="dropdown-item" href="#">D1-Jugend</a>
+                        <a class="dropdown-item" href="a-jugend#content">A-Jugend</a>
+                        <a class="dropdown-item" href="c-jugend#content">C-Jugend</a>
+                        <a class="dropdown-item" href="d1-jugend#content">D1-Jugend</a>
                         <a class="dropdown-item" href="#">D2-Jugend</a>
                         <a class="dropdown-item" href="#">E1-Jugend</a>
                         <a class="dropdown-item" href="#">E2-und E3-Jugend</a>
@@ -125,22 +125,22 @@
                         Senioren
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">1. Mannschaft</a>
-                        <a class="dropdown-item" href="#">2. Mannschaft</a>
-                        <a class="dropdown-item" href="#">Alte Herren</a>
+                        <a class="dropdown-item" href="1mannschaft#content">1. Mannschaft</a>
+                        <a class="dropdown-item" href="2mannschaft#content">2. Mannschaft</a>
+                        <a class="dropdown-item" href="alte_herren#content">Alte Herren</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="fotos">Fotos</a>
+                    <a class="nav-link" href="fotos#content">Fotos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sponsoren">Sponsoren</a>
+                    <a class="nav-link" href="sponsoren#content">Sponsoren</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kontakt">Kontakt</a>
+                    <a class="nav-link" href="kontakt#content">Kontakt</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="anmeldung">Anmeldung</a>
+                    <a class="nav-link" href="anmeldung#content">Anmeldung</a>
                 </li>
             </ul>
         </div>
@@ -149,7 +149,7 @@
 
 <body>
 <div id="app">
-    <main>
+    <main id="content">
         @yield('content')
     </main>
 </div>
@@ -172,22 +172,28 @@
                         <h5>Social Media</h5>
                     </div>
                     <div class="col-12">
-                        <a href="#"><i class="fab fa-facebook socialMediaIcon"></i></a>
-                        <a href="#"><i class="fab fa-twitter socialMediaIcon"></i></a>
-                        <a href="#"><i class="fab fa-instagram socialMediaIcon"></i></a>
-                        <a href="#"><i class="fab fa-youtube socialMediaIcon"></i></a>
+                        <div class="row">
+                            <div class="col-3"><a href="#"><i class="fab fa-facebook socialMediaIcon"></i></a></div>
+                            <div class="col-3"><a href="#"><i class="fab fa-twitter socialMediaIcon"></i></a></div>
+                            <div class="col-3"><a href="#"><i class="fab fa-instagram socialMediaIcon"></i></a></div>
+                            <div class="col-3"><a href="#"><i class="fab fa-youtube socialMediaIcon"></i></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr class="light">
 
             <div class="row centered">
-                <div class="col"><h5>Kontakt</h5>
-                    <span>Gladbacher Str. 100,<br> 50189 Elsdorf<br/><a href="tel:02274908574">02274 / 908574</a></span></div>
-                <div class="col"><h5>Informationen</h5><p>
-                        <a href="#">Datenschutz</a><br/>
-                        <a href="#">Impressum</a>
-                    </p></div>
+                <div class="col">
+                    <h5>Kontakt</h5>
+                    <span>Gladbacher Str. 100,<br> 50189 Elsdorf<br/><a href="tel:02274908574">02274 / 908574</a></span>
+                </div>
+                <div class="col"><h5>Informationen</h5>
+                    <p>
+                        <a href="#" data-toggle="modal" data-target="#datenschutz">Datenschutz</a><br/>
+                        <a href="#" data-toggle="modal" data-target="#impressum">Impressum</a>
+                    </p>
+                </div>
             </div>
             <div class="col-12 mb-4">
                 <h5>&copy; SC08.DE</h5><br/>
@@ -196,6 +202,51 @@
         </div>
     </div>
 </footer>
+
+<!-- Impressum -->
+<div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="impressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Impressum</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><b>Strasse:</b><br> Heerstrasse 13</p>
+                <p><b>Ort:</b><br> 50126 Bergheim</p>
+                <p>
+                    <b>Verantwortlicher:</b> <br>
+                    SC08 e.V.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Datenschutz -->
+<div class="modal fade" id="datenschutz" tabindex="-1" role="dialog" aria-labelledby="datenschutzModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Datenschutz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>

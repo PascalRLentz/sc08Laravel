@@ -22,14 +22,34 @@ Route::get('vorstand', function () {
 Route::get('foerderverein', function () {
     return view('sites/foerderverein');
 });
+Route::get('alte_herren', function () {
+    return view('sites/senioren/alteherren');
+});
+Route::get('jugendvorstand', function () {
+    return view('sites/jugend/jugendvorstand');
+});
+Route::get('jugendleiter', function () {
+    return view('sites/jugend/jugendleiter');
+});
+Route::get('a-jugend', function () {
+    return view('sites/jugend/a-jugend');
+});
+Route::get('c-jugend', function () {
+    return view('sites/jugend/c-jugend');
+});
+Route::get('d1-jugend', function () {
+    return view('sites/jugend/d1-jugend');
+});
+Route::get('1mannschaft', function () {
+    return view('sites/senioren/1mannschaft');
+});
+Route::get('2mannschaft', function () {
+    return view('sites/senioren/2mannschaft');
+});
 
 Route::group(['prefix' => 'kontakt', 'as' => 'kontakt.'], function () {
         Route::get('/', [\App\Http\Controllers\ContactController::class, 'index'])->name('index');
         Route::post('/', [\App\Http\Controllers\ContactController::class, 'store'])->name('store');
-});
-
-Route::get('/anmeldung', function () {
-    return view('sites/anmeldung');
 });
 
 Route::group(['prefix' => 'anmeldung', 'as' => 'anmeldung.'], function () {
@@ -40,6 +60,11 @@ Route::group(['prefix' => 'anmeldung', 'as' => 'anmeldung.'], function () {
 Route::group(['prefix' => 'fotos', 'as' => 'fotos.'], function () {
     Route::get('/', [\App\Http\Controllers\FotoController::class, 'index'])->name('index');
     Route::post('/', [\App\Http\Controllers\FotoController::class, 'store'])->name('store');
+});
+
+Route::group(['prefix' => 'sponsoren', 'as' => 'sponsoren.'], function () {
+    Route::get('/', [\App\Http\Controllers\SponsorController::class, 'index'])->name('index');
+    Route::post('/', [\App\Http\Controllers\SponsorController::class, 'store'])->name('store');
 });
 
 Auth::routes();
