@@ -97,8 +97,8 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="vorstand#content">Vorstand</a>
                         <a class="dropdown-item" href="foerderverein#content">Förderverein</a>
-                        <a class="dropdown-item" href="#">Schiedsrichter</a>
-                        <a class="dropdown-item" href="#">Ehrenmitglieder</a>
+                        <a class="dropdown-item" href="schiedsrichter#content">Schiedsrichter</a>
+                        <a class="dropdown-item" href="ehrenmitgleider#content">Ehrenmitglieder</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -112,12 +112,12 @@
                         <a class="dropdown-item" href="a-jugend#content">A-Jugend</a>
                         <a class="dropdown-item" href="c-jugend#content">C-Jugend</a>
                         <a class="dropdown-item" href="d1-jugend#content">D1-Jugend</a>
-                        <a class="dropdown-item" href="#">D2-Jugend</a>
-                        <a class="dropdown-item" href="#">E1-Jugend</a>
-                        <a class="dropdown-item" href="#">E2-und E3-Jugend</a>
-                        <a class="dropdown-item" href="#">F1-Jugend</a>
-                        <a class="dropdown-item" href="#">F2-Jugend</a>
-                        <a class="dropdown-item" href="#">F3-Jugend</a>
+                        <a class="dropdown-item" href="d2-jugend#content">D2-Jugend</a>
+                        <a class="dropdown-item" href="e1-jugend">E1-Jugend</a>
+                        <a class="dropdown-item" href="e2-e3-jugend#content">E2-und E3-Jugend</a>
+                        <a class="dropdown-item" href="f1-jugend">F1-Jugend</a>
+                        <a class="dropdown-item" href="f2-jugend">F2-Jugend</a>
+                        <a class="dropdown-item" href="f3-jugend">F3-Jugend</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

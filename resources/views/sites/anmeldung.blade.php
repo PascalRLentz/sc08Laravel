@@ -118,6 +118,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 text-right">
+                                    <small>Beim Absenden akzeptieren Sie unsere Nutzungsbedinungen sowie unsere <a href="#" data-toggle="modal" data-target="#datenschutz">Datenschutzerklärung</a>.</small>
+                                </div>
+                                <div class="col-12 text-right">
                                     <div class="form-group">
                                         <input type="submit" name="submit" value="Absenden" class="btn btn-primary">
                                     </div>

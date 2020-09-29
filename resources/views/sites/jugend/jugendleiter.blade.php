@@ -16,8 +16,6 @@
                         <img src="{{ \Illuminate\Support\Facades\URL::asset('storage/jugend/jugendvorstand/Jugendleiter.jpg') }}" class="img-fluid" alt="Jugendleiter">
                     </div>
                     <div class="col-md-12 col-lg-6">
-                        <p class="font-weight-bold">Jugendleiter</p>
-                        <hr>
                         <p>Name: Tobias Hänsel</p>
                         <p>Mobil: <a href="tel:015209032075" class="telephone">0152 - 09032075</a></p>
                     </div>

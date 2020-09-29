@@ -40,6 +40,25 @@ Route::get('c-jugend', function () {
 Route::get('d1-jugend', function () {
     return view('sites/jugend/d1-jugend');
 });
+Route::get('d2-jugend', function () {
+    return view('sites/jugend/d2-jugend');
+});
+Route::get('e1-jugend', function () {
+    return view('sites/jugend/e1-jugend');
+});
+Route::get('e2-e3-jugend', function () {
+    return view('sites/jugend/e2-e3-jugend');
+});
+Route::get('f1-jugend', function () {
+    return view('sites/jugend/f1-jugend');
+});
+Route::get('f2-jugend', function () {
+    return view('sites/jugend/f2-jugend');
+});
+Route::get('f3-jugend', function () {
+    return view('sites/jugend/f3-jugend');
+});
+
 Route::get('1mannschaft', function () {
     return view('sites/senioren/1mannschaft');
 });
