@@ -81,20 +81,6 @@
                     <strong>Email: -</strong>
                 </div>
             </div>
-            <div class="row mb-2">
-                <div class="col-xs-12 col-sm-6">
-                    <img src="../images/SC08/vorstand/MarleneBel.jpg" class="img-fluid rounded" style="width: 500px; width:500px;">
-                </div>
-                <div class="col-xs-12 text-xs-center col-sm-6">
-                    <h3>2. Kassiererin</h3>
-                    <hr>
-                    <strong>Name: </strong>Sabine Hütter
-                    <br/>
-                    <strong>Tel.: </strong><a href="tel:01715746694" class="telephone">0173 / 5392566</a>
-                    <br/>
-                    <strong>Email: -</strong>
-                </div>
-            </div>
         </div>
         <div class="news-footer"></div>
     </div>

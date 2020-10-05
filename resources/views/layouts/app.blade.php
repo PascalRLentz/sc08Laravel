@@ -46,7 +46,7 @@
                 </div>
                 <div class="row d-none d-lg-block">
                     <div class="col-12">
-                        <h1 class="display-2 d-none d-lg-block">SC08 Elsdorf</h1>
+                        <h1 class="display-2 d-none d-lg-block">SC08 Elsdorf e.V.</h1>
                         <h1 class="display-2 d-none d-lg-block">Jetzt Anmelden!</h1>
                         <div class="d-none d-lg-block">
                             <a href="anmeldung#content" class="btn btn-outline-light btn-lg uppercase">Anmeldung</a>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="row d-none d-lg-block">
                     <div class="col-12">
-                        <h1 class="display-2">SC08 Elsdorf</h1>
+                        <h1 class="display-2">SC08 Elsdorf e.V.</h1>
                         <h3>Jetzt Anmelden!</h3>
                         <div class="d-none d-sm-block">
                             <a href="anmeldung#content" class="btn btn-outline-light btn-lg uppercase">Anmeldung</a>
@@ -106,10 +106,12 @@
                         Jugend
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <label class="dropdown-item">SG 50189</label>
+                        <hr>
                         <a class="dropdown-item" href="jugendvorstand#content">Jugendvorstand</a>
                         <a class="dropdown-item" href="jugendleiter#content">Jugendleiter</a>
                         <hr>
-                        <a class="dropdown-item" href="a-jugend#content">A-Jugend</a>
+                        <a class="dropdown-item" href="b-jugend#content">B-Jugend</a>
                         <a class="dropdown-item" href="c-jugend#content">C-Jugend</a>
                         <a class="dropdown-item" href="d1-jugend#content">D1-Jugend</a>
                         <a class="dropdown-item" href="d2-jugend#content">D2-Jugend</a>
@@ -149,20 +151,12 @@
 
 <body>
 <div id="app">
-    <main id="content">
+    <main id="content" class="mb-5">
         @yield('content')
     </main>
 </div>
 </body>
 
-<div class="container-fluid" style="width: 100%; height:400px; padding:0px; margin:0px; padding-top: 60px;">
-    <iframe
-        width="100%"
-        height="100%"
-        frameborder="0" style="border:0;"
-        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCsI-67JljWhFs72pv6ocoYKoNTmZaEJ-w&center=50.9371308, 6.5698302&zoom=16">
-    </iframe>
-</div>
 <footer>
     <div class="container-fluid">
         <div class="row text-center">
@@ -173,10 +167,9 @@
                     </div>
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-3"><a href="#"><i class="fab fa-facebook socialMediaIcon"></i></a></div>
-                            <div class="col-3"><a href="#"><i class="fab fa-twitter socialMediaIcon"></i></a></div>
-                            <div class="col-3"><a href="#"><i class="fab fa-instagram socialMediaIcon"></i></a></div>
-                            <div class="col-3"><a href="#"><i class="fab fa-youtube socialMediaIcon"></i></a></div>
+                            <div class="col-6"><a href="https://www.facebook.com/SC08Elsdorf" target="_blank"><i class="fab fa-facebook socialMediaIcon"></i></a></div>
+                            <div class="col-6"><a href="https://www.instagram.com/sc08elsdorf/?hl=de" target="_blank"><i class="fab fa-instagram socialMediaIcon"></i></a></div>
+                            <!-- <div class="col-4"><a href="#"><i class="fab fa-youtube socialMediaIcon"></i></a></div> -->
                         </div>
                     </div>
                 </div>
@@ -186,7 +179,7 @@
             <div class="row centered">
                 <div class="col">
                     <h5>Kontakt</h5>
-                    <span>Gladbacher Str. 100,<br> 50189 Elsdorf<br/><a href="tel:02274908574">02274 / 908574</a></span>
+                    <span>Gladbacher Str. 100,<br> 50189 Elsdorf<br/><a href="tel:022742168">02274 / 2168</a></span>
                 </div>
                 <div class="col"><h5>Informationen</h5>
                     <p>

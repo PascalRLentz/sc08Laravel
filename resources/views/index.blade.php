@@ -121,4 +121,13 @@
         </div>
     </div>
 </div>
+
+<div class="container-fluid" style="width: 100%; height:400px; padding:0px; margin:0px; padding-top: 60px;">
+    <iframe
+        width="100%"
+        height="100%"
+        frameborder="0" style="border:0;"
+        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCsI-67JljWhFs72pv6ocoYKoNTmZaEJ-w&center=50.9371308, 6.5698302&zoom=16">
+    </iframe>
+</div>
 @endsection

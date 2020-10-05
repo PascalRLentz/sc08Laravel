@@ -33,11 +33,21 @@ class ContactController extends Controller
         $contact->save();
 
         //Send Mail
+        /*
         Mail::raw('Name: '. $data['first_name'] . ' ' . $data['last_name'] . ' Email: ' . $data['email'] . ' Text: ' . $data['message'], function($message)
         {
             $message->from('pascal@lentz-it.de', 'Pascal');
             $message->to('pascal@lentz-it.de');
             $message->subject('Kontaktaufnahme - SC08 Elsdorf');
+        });
+        */
+
+        $html = '<b>Name: </b>' . $data['first_name'] . ' ' . $data['last_name'] . '<br>' . '<b>Email: </b>' . $data['email'] . '<br>' . '<b>Text: </b>' . $data['message'];
+        Mail::send([], [], function (\Illuminate\Mail\Message $message) use ($html) {
+            $message->to('pascal@lentz-it.de')
+                ->subject('Kontaktaufnahme - SC08 Elsdorf')
+                ->from('kontakt@sc08.de')
+                ->setBody($html, 'text/html');
         });
 
         return redirect('kontakt')->with('status', 'Deine Anfrage wurde erfolgreich eingereicht! Wir kümmern ums schnellstmöglich um eine Antwort.');
